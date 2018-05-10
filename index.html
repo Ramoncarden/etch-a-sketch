@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Etch A Sketch</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Trade+Winds" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div id="container">
+    <div class="gameName"><span class="title" id="magic">MAGIC </span>ETCH A SKETCH<span class="title" id="screen"> SCREEN</span></div>
+    <canvas class="canvas" width="750px" height="410px"></canvas>
+    <div id="gameInstructions">Use the directional keyboard buttons to draw!<span id='close' onclick='this.parentNode.parentNode.removeChild(this.parentNode); return false;'> x</span></div>
+    <button id="rainbow">Rainbow!</button>
+    <button id="btnDelete">Delete <i class="fas fa-trash-alt"></i>
+</button>
+    <div class="knob" id="leftKnob"></div>
+    <div class="knob" id="rightKnob"></div>
+  </div>
+
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
